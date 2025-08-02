@@ -1,20 +1,16 @@
 # 📰 News App
 
-A modern, full-stack news application built with React, Node.js, and Express. Get real-time news updates, personalized content, and AI-powered news summarization.
+A modern, full-stack news application built with React, Node.js, and Express. Get real-time news updates, personalized content, and Names Entity Recognition.
 
 ## 🌟 Features
 
 - **Real-time News Updates**: Get the latest news from multiple sources
-- **AI-Powered Summarization**: Summarize articles using OpenAI and Hugging Face APIs
 - **User Authentication**: Secure login with Google OAuth
 - **Personalized Feed**: Customize your news preferences
 - **Responsive Design**: Works seamlessly on desktop and mobile
 - **Named Entity Recognition**: Extract key entities from news articles
 - **Modern UI/UX**: Clean, intuitive interface
 
-## 🚀 Live Demo
-
-**[Live Demo](https://your-vercel-app.vercel.app)**
 
 ## 🛠️ Tech Stack
 
@@ -32,7 +28,6 @@ A modern, full-stack news application built with React, Node.js, and Express. Ge
 - **Cors** - Cross-origin resource sharing
 
 ### APIs & Services
-- **OpenAI API** - Article summarization
 - **Hugging Face API** - NLP tasks
 - **Google OAuth** - User authentication
 - **GNews API** - News content
@@ -72,7 +67,6 @@ cp backend/config.env.template backend/config.env
 ```env
 MONGODB_URI=mongodb://127.0.0.1:27017/news-app
 JWT_SECRET=your_jwt_secret_here
-OPENAI_API_KEY=your_openai_api_key_here
 HUGGINGFACE_API_KEY=your_huggingface_api_key_here
 GNEWS_API_KEY=your_gnews_api_key_here
 GOOGLE_CLIENT_ID=your_google_client_id_here
@@ -82,10 +76,9 @@ PORT=5000
 
 ### API Keys Setup
 
-1. **OpenAI API Key**: Get from [OpenAI Platform](https://platform.openai.com/)
-2. **Hugging Face API Key**: Get from [Hugging Face](https://huggingface.co/settings/tokens)
-3. **GNews API Key**: Get from [GNews](https://gnews.io/)
-4. **Google OAuth**: Set up in [Google Cloud Console](https://console.cloud.google.com/)
+1. **Hugging Face API Key**: Get from [Hugging Face](https://huggingface.co/settings/tokens)
+2. **GNews API Key**: Get from [GNews](https://gnews.io/)
+3. **Google OAuth**: Set up in [Google Cloud Console](https://console.cloud.google.com/)
 
 ## 🚀 Running the Application
 
@@ -140,34 +133,6 @@ news-app/
 └── README.md             # This file
 ```
 
-## 🔧 API Endpoints
-
-### Authentication
-- `POST /api/auth/google` - Google OAuth login
-- `POST /api/auth/logout` - User logout
-
-### News
-- `GET /api/news` - Get news articles
-- `GET /api/news/:id` - Get specific article
-- `POST /api/news/summarize` - Summarize article
-
-### User
-- `GET /api/user/profile` - Get user profile
-- `PUT /api/user/preferences` - Update preferences
-
-## 🚀 Deployment
-
-### Frontend Deployment (Vercel)
-1. Connect your GitHub repository
-2. Set build command: `npm run build`
-3. Set output directory: `dist`
-4. Add environment variables for API endpoints
-
-### Backend Deployment (Railway)
-1. Connect your GitHub repository
-2. Set environment variables
-3. Set start command: `npm start`
-4. Configure MongoDB connection
 
 ## 🤝 Contributing
 
@@ -188,7 +153,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- OpenAI for AI summarization capabilities
 - Hugging Face for NLP models
 - GNews for news content
 - Google for OAuth authentication
