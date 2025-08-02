@@ -8,7 +8,8 @@ A modern, full-stack news application built with React, Node.js, and Express. Ge
 - **User Authentication**: Secure login with Google OAuth
 - **Personalized Feed**: Customize your news preferences
 - **Responsive Design**: Works seamlessly on desktop and mobile
-- **Named Entity Recognition**: Extract key entities from news articles
+- **Text-to-Speech**: Built-in audio narration for improved accessibility
+- **Named Entity Recognition**: Extract key entities from news articles using Hugging Face API
 - **Modern UI/UX**: Clean, intuitive interface
 
 
@@ -28,7 +29,7 @@ A modern, full-stack news application built with React, Node.js, and Express. Ge
 - **Cors** - Cross-origin resource sharing
 
 ### APIs & Services
-- **Hugging Face API** - NLP tasks
+- **Hugging Face API** - Named Entity Recognition (NER)
 - **Google OAuth** - User authentication
 - **GNews API** - News content
 
@@ -153,7 +154,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Hugging Face for NLP models
+- Hugging Face for Named Entity Recognition models
 - GNews for news content
 - Google for OAuth authentication
 
